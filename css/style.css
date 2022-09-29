@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Gelion";
+  font-weight: 900;
+  src: url("https://github.com/jgkidd/imgs/blob/gh-pages/gelion_black-webfont.eot?raw=true");
+  src: url("https://github.com/jgkidd/imgs/blob/gh-pages/gelion_black-webfont.woff?raw=true") format("woff"),
+  url("https://github.com/jgkidd/imgs/blob/gh-pages/gelion_black-webfont.svg?raw=true") format("svg");
+  }
+
+  @font-face {
+    font-family: "Gelion";
+    font-weight: 300;
+    src: url("https://github.com/jgkidd/imgs/blob/gh-pages/gelion_regular-webfont.eot?raw=true");
+    src: url("https://github.com/jgkidd/imgs/blob/gh-pages/gelion_regular-webfont.woff?raw=true") format("woff"),
+    url("https://github.com/jgkidd/imgs/blob/gh-pages/gelion_regular-webfont.svg?raw=true") format("svg");
+    }
+  
+:root {
+  --blue-20: #0C151D;
+  --blue-60: #597592;
+  --blue-80: #00A3FF;
+  --padding: 18px;  
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--blue-20);
+  font-family: 'Gelion', Helvetica, sans-serif;
+  color: white;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 66px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  color:  var(--blue-80);
+}
+
+p {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+input {
+  background: none;
+  border: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--blue-60);
+  padding: 9px 15px;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: var(--blue-60);
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.col-2 {
+  width: 50%;
+  padding: var(--padding);
+}
+
+.input-btn {
+  display: flex;
+}
+
+button {
+  background-color: var(--blue-80);
+  border: none;
+  color: white;
+}
+
+
+
+@media screen and (max-width : 480px) {
+  .col-2 {
+    width: 100%;
+  }
+}
