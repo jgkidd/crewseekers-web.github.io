@@ -78,8 +78,10 @@ input::placeholder {
 }
 
 .wrapper {
-  border: 1px solid orange;
   background-image: url("https://raw.githubusercontent.com/jgkidd/imgs/gh-pages/bkg.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main {
@@ -88,7 +90,6 @@ input::placeholder {
   display: flex;
   align-items: center;
   min-height: 85vh;
-  border: 1px solid red;
 }
 
 .col-2 {
@@ -97,11 +98,9 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: var(--padding);
-  border: 1px solid blue;
 }
 
 .footer {
-  border: 1px solid green;
   min-height: 15vh;
   display: flex;
   flex-direction: column;
